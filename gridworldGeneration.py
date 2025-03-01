@@ -69,6 +69,7 @@ def generate_multiple_grids(num_grids, size):
     return grids
 
 if __name__ == "__main__":
-    n = 101  # Size of the gridworld (must be an odd number)
-    gridworld = generate_grid(n)
-    visualize_grid(gridworld)
+    n = 21  # Size of the gridworld (must be an odd number)
+    gridworld = generate_multiple_grids( 10,  n)
+    for i in range(5):
+        visualize_grid(gridworld[i])
